@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #tab tr:nth-child(2n){
+      background: yellow;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id='div'>
+    <table id='tab'>
+      <thead>
+          <tr>
+              <th>123</th>
+              <th>456</th>
+              <th>789</th>
+            </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1111</th>
+          <td>111</th>
+          <td>111</th>
+        </tr>
+        <tr>
+          <td>222</th>
+          <td>222</th>
+          <td>222</th>
+        </tr>
+      </tbody>
+    </table>
+    <table id='tab-no-color'>
+        <thead>
+            <tr>
+                <th>123</th>
+                <th>456</th>
+                <th>789</th>
+              </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1111</th>
+            <td>111</th>
+            <td>111</th>
+          </tr>
+          <tr>
+            <td>222</th>
+            <td>222</th>
+            <td>222</th>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</body>
+<script src='js/jquery.js'></script>
+<script src='js/index.js'></script>
+<script>
+ $('#tab-no-color').on('click',function(){
+  $('#tab').hide();
+ })
+ $('#tab-no-color').css('color', 'red')
+  //  document.getElementById('tab').style.color='red'
+</script>
+</html>
