@@ -24,3 +24,15 @@ var flagStatus;
 })(flagStatus || (flagStatus = {}));
 var success = flagStatus.success;
 console.log('successStatus is', success);
+// 可能是 number null undefined
+var numHard;
+// void  方法没有返回值
+function run() {
+}
+// void  方法返回number
+function runNumber() {
+    return 123;
+}
+// never  类型
+var a = undefined;
+a = undefined;

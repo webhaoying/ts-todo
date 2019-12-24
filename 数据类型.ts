@@ -26,8 +26,8 @@ let arre:[number, string] = [123, 'string']
 
 // 枚举类型 - 意义明显  如果没有赋值 那么值就是下标
  enum flagStatus {
-  'success' = 1,
-  'error' = 2
+  success = 1,
+  error = 2
  }
  var success:flagStatus = flagStatus.success
  console.log('successStatus is', success)
